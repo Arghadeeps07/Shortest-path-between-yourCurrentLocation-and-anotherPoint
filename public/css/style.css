@@ -1,0 +1,58 @@
+/* Style for the map container */
+#map {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Style for the search box container */
+  #search-container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the input box */
+  #search-container input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+  }
+  
+  #search-container input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Style for the button */
+  #search-container button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #search-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Add box shadow for a floating effect */
+  #search-container {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
