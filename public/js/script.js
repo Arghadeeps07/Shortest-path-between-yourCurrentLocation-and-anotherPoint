@@ -4,9 +4,14 @@ let userLocation = null;
 let map, routingControl;
 const markers = {};
 
-// Initialize the map
-map = L.map("map").setView([0, 0], 10);
+// Initialize the map without zoom control for mobile views
+map = L.map("map", {
+    center: [0, 0],
+    zoom: 10,
+    zoomControl: window.innerWidth > 768 // Enable zoom control only on non-mobile screens
+});
 
+// Add tile layer to the map
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: "OpenStreetMap"
 }).addTo(map);
